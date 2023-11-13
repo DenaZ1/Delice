@@ -1,16 +1,21 @@
 import React from 'react'
 
 import { Cart, Footer, FooterBanner, HeroBanner,
-  Layout, Product } from './container';
+  Layout, Product, Home } from './container';
 import { Navbar } from './components';
 import './App.scss';
+
 const App = () => {
   return (
-    <div className='app'> 
+   // <div className='app'> 
+    //  
+    <>
       <HeroBanner />
-     
-    </div>
-
+      <Home />
+   
+   
+   Footer
+</>
   )
 }
 
