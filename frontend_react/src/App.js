@@ -12,9 +12,8 @@ const App = () => {
     <>
       <HeroBanner />
       <Home />
-   
-   
-   Footer
+      <FooterBanner />
+
 </>
   )
 }
