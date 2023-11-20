@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaXTwitter } from "react-icons/fa6";
+
 const Footer = () => {
   return (
     <div className='footer-container'>

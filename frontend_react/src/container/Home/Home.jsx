@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import { urlFor, client } from '../../client';
 
-import {Product} from '../index';
+import {Product, Layout, HeroBanner, FooterBanner} from '../index';
 import './Home.scss';
 
 const Home = () => {
@@ -22,22 +22,27 @@ const Home = () => {
     }, []);
 
   return (
-    <>
-    <div className='products-heading'>
-        <h2>Best Selling Pastries</h2>
-        <p>Speakers of many variations</p>
-    </div>
-    
-    <div className='products-container'>
-    { products.map((product) => <Product key=
-      {product._id} product={product} /> )}
-     {/* <div>
-        <img src={ urlFor(product.imgUrl)} alt={product.title} />
-        <h2 className='bold-text' style={{marginTop: 20 }} >{product.name}</h2>
-        <p className='p-text' style={{marginTop: 20 }} >{product.details}</p>
-    </div>*/}
+    <>     
+
+      <HeroBanner />
+  
+      <div className='products-heading'>
+          <h2>Best Selling Pastries</h2>
+          <p>Speakers of many variations</p>
+      </div>
       
-    </div>
+      <div className='products-container'>
+      { products.map((product) => <Product key=
+        {product._id} product={product} /> )}
+      {/* <div>
+          <img src={ urlFor(product.imgUrl)} alt={product.title} />
+          <h2 className='bold-text' style={{marginTop: 20 }} >{product.name}</h2>
+          <p className='p-text' style={{marginTop: 20 }} >{product.details}</p>
+      </div>*/}
+        
+      </div>
+      <FooterBanner />
+
   </>
   )
 }

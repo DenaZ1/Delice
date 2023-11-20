@@ -30,15 +30,15 @@ const FooterBanner = () => {
             <h3>{footerBanner.midText}</h3>
             <p>{footerBanner.desc}</p>
 
-            <BrowserRouter>
+      
               <Link to={`/product/${footerBanner.product}`}>
                 <button type='button'>{footerBanner.buttonText}</button>
               </Link>
-            </BrowserRouter>
+  
           </div>
 
           <img 
-          //  src={ urlFor(footerBanner.image)} 
+            src={ urlFor(footerBanner.image)} 
             alt={footerBanner.product} 
             className='footer-banner-image' 
           />

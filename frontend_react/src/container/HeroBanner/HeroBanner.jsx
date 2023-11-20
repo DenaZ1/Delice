@@ -1,5 +1,5 @@
 import React, { useState, useEffect}  from 'react';
-import { Link, BrowserRouter} from "react-router-dom";
+import { Link} from "react-router-dom";
 
 import { urlFor, client } from '../../client';
 import './HeroBanner.scss';
@@ -17,7 +17,6 @@ const HeroBanner = () => {
   return (
     
     <div className='hero-banner-container'>
-      <BrowserRouter>
         { heroBanner.map((banner) => (
         <div>
           <p className='pastries'>{banner.smallText}</p>
@@ -37,7 +36,6 @@ const HeroBanner = () => {
           </div>
         </div>
       ))}
-      </BrowserRouter>
     </div>
 
     
